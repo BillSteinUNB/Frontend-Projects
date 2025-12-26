@@ -53,7 +53,7 @@ const Terminal: React.FC = () => {
         ))}
         {status === TerminalStatus.THINKING && (
           <div className="flex items-center text-xs text-secondary animate-pulse">
-             > processing_request... <span className="ml-1 inline-block w-2 h-4 bg-primary animate-blink"></span>
+               {'>'} processing_request... <span className="ml-1 inline-block w-2 h-4 bg-primary animate-blink"></span>
           </div>
         )}
         <div ref={bottomRef} />
